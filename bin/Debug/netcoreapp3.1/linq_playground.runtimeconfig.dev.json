@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\ladib\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ladib\\.nuget\\packages"
+    ]
+  }
+}
