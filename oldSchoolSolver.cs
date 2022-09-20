@@ -6,14 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace linq_playground {
-  class oldSchoolSolver : Solver {
+  class OldSchoolSolver : Solver {
     private Numbers num;
 
-    public oldSchoolSolver(int size, int start, int stop, bool output)
+    public OldSchoolSolver(int size, int start, int stop, bool output)
             : base(size, start, stop, output) {
 
       num = new Numbers(size, start, stop);
-      solveAll();
+      base.solveAll();
     }
 
     // print every numbers
@@ -34,7 +34,7 @@ namespace linq_playground {
         }
       }
       Console.WriteLine(output ?
-        $"the number of odd elements: {count}" : ""
+        $"the number of even elements: {count}" : ""
       );
     }
 
@@ -59,7 +59,7 @@ namespace linq_playground {
 
       Console.WriteLine(output ?
        $"the sum of the elements: {sum}" : ""
-     );
+      );
     }
 
     // the average of the elements

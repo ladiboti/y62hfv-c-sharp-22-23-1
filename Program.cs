@@ -8,7 +8,8 @@ using System.Threading;
 namespace linq_playground {
   class Program {
     static void Main(string[] args) {
-      oldSchoolSolver o1 = new oldSchoolSolver(5000000, 0, 100, true);
+      OldSchoolSolver o1 = new OldSchoolSolver(500000, 0, 100, true);
+      LinqSolver      l1 = new LinqSolver(500000, 0, 100, true);
     }
   }
 }

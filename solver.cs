@@ -7,7 +7,7 @@ using System.Drawing;
 // at least I revised the basic paradigmas of oop or idk :(
 abstract class Solver
 {
-  private int size, start, stop;
+  private long size, start, stop;
   private bool output;
   private Stopwatch sw = new Stopwatch();
   public Solver(int size, int start, int stop, bool output) {
@@ -24,8 +24,6 @@ abstract class Solver
   public abstract void task6(bool output);
 
   public void solveAll() {
-
-
     sw.Start();
 
     task1(false);    // not stylish :(
