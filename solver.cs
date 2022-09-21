@@ -16,22 +16,22 @@ abstract class Solver
     this.stop = stop;
     this.output = output;
   }
-  public abstract void task1(bool output);
-  public abstract void task2(bool output);
-  public abstract void task3(bool output);
-  public abstract void task4(bool output);
-  public abstract void task5(bool output);
-  public abstract void task6(bool output);
+  public abstract void printElements(bool output);
+  public abstract void evenCounter(bool output);
+  public abstract void divisibleCounter(bool output);
+  public abstract void sumOfElements(bool output);
+  public abstract void averqageOfElements(bool output);
+  public abstract void maxOfElements(bool output);
 
   public void solveAll() {
     sw.Start();
 
-    task1(false);    // not stylish :(
-    task2(output);
-    task3(output);
-    task4(output);
-    task5(output);
-    task6(output);
+    printElements(false);    // not stylish :(
+    evenCounter(output);
+    divisibleCounter(output);
+    sumOfElements(output);
+    averqageOfElements(output);
+    maxOfElements(output);
 
     sw.Stop();
     Console.WriteLine(sw.Elapsed);

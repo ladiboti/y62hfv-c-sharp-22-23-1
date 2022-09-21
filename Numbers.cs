@@ -8,6 +8,7 @@ class Numbers {
     rndArr = Enumerable.Repeat(0, size)
                .Select(r => rnd.Next(start, stop)).ToArray();
   }
+  // debug
   public void write() {
     rndArr.ToList().ForEach(
           x => Console.Write($"{x} ")

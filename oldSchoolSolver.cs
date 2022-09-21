@@ -17,7 +17,7 @@ namespace linq_playground {
     }
 
     // print every numbers
-    public override void task1(bool output) {
+    public override void printElements(bool output) {
       for (int i = 0; i < num.rndArr.Count(); i++) {
         Console.Write(output ?
           $"{num.rndArr.ElementAt(i)} " : ""
@@ -26,7 +26,7 @@ namespace linq_playground {
       Console.WriteLine("\n");
     }
     // number of even numbers (páros!!!!)
-    public override void task2(bool output) {
+    public override void evenCounter(bool output) {
       int count = 0;
       for (int i = 0; i < num.rndArr.Count(); i++) {
         if (num.rndArr.ElementAt(i) % 2 == 0) {
@@ -39,7 +39,7 @@ namespace linq_playground {
     }
 
     // count of numbers that can be both divided by 5 and 3
-    public override void task3(bool output) {
+    public override void divisibleCounter(bool output) {
       int count = 0;
       for (int i = 0; i < num.rndArr.Count(); i++) {
         if (num.rndArr.ElementAt(i) % 3 == 0 && num.rndArr.ElementAt(i) % 5 == 0) {
@@ -52,7 +52,7 @@ namespace linq_playground {
     }
 
     // the sum of the elements
-    public override void task4(bool output) {
+    public override void sumOfElements(bool output) {
       int sum = 0;
       for (int i = 0; i < num.rndArr.Count(); i++)
         sum += num.rndArr.ElementAt(i);
@@ -63,7 +63,7 @@ namespace linq_playground {
     }
 
     // the average of the elements
-    public override void task5(bool output) {
+    public override void averqageOfElements(bool output) {
       int sum = 0;
       for (int i = 0; i < num.rndArr.Count(); i++)
         sum += num.rndArr.ElementAt(i);
@@ -74,7 +74,7 @@ namespace linq_playground {
     }
 
     // maximum of the elements
-    public override void task6(bool output) {
+    public override void maxOfElements(bool output) {
       int max = 0;
       for (int i = 0; i < num.rndArr.Count(); i++)
         if (num.rndArr.ElementAt(i) > max)

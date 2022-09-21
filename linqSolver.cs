@@ -13,7 +13,7 @@ class LinqSolver : Solver {  // inhertits solver!!!
     base.solveAll();
   }
   // print every numbers
-  public override void task1(bool output) {
+  public override void printElements(bool output) {
     if (output)
       num.rndArr.ToList().ForEach(
         e => Console.Write($"{e} ")
@@ -21,7 +21,7 @@ class LinqSolver : Solver {  // inhertits solver!!!
   }
 
   // number of even numbers
-  public override void task2(bool output) {
+  public override void evenCounter(bool output) {
     Console.WriteLine(output ? 
       "\nthe number of even elements: " + 
       num.rndArr
@@ -30,7 +30,7 @@ class LinqSolver : Solver {  // inhertits solver!!!
     );
   }
   // count of numbers that can be both divided by 5 and 3
-  public override void task3(bool output) {
+  public override void divisibleCounter(bool output) {
     Console.WriteLine(output ? 
      "the count of numbers that can be both divided by 5 and 3: " +
      num.rndArr
@@ -39,19 +39,19 @@ class LinqSolver : Solver {  // inhertits solver!!!
    );
   }
   // the sum of the elements
-  public override void task4(bool output) {
+  public override void sumOfElements(bool output) {
     Console.WriteLine(output ?
        $"the sum of the elements: {num.rndArr.ToList().Sum()}" : ""
     );
   }
   // the average of the elements
-  public override void task5(bool output) {
+  public override void averqageOfElements(bool output) {
     Console.WriteLine(output ?
       $"the average of the elements: {num.rndArr.ToList().Average()}" : ""
     );
   }
   // maximum of the elements
-  public override void task6(bool output) {
+  public override void maxOfElements(bool output) {
     Console.WriteLine(output ?
       $"the maximum of the elements: {num.rndArr.ToList().Max()}" : ""
     );
