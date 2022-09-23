@@ -1,0 +1,14 @@
+C:\Users\ladib\source\repos\linq\bin\Debug\netcoreapp3.1\ugly_chess.exe
+C:\Users\ladib\source\repos\linq\bin\Debug\netcoreapp3.1\ugly_chess.deps.json
+C:\Users\ladib\source\repos\linq\bin\Debug\netcoreapp3.1\ugly_chess.runtimeconfig.json
+C:\Users\ladib\source\repos\linq\bin\Debug\netcoreapp3.1\ugly_chess.runtimeconfig.dev.json
+C:\Users\ladib\source\repos\linq\bin\Debug\netcoreapp3.1\ugly_chess.dll
+C:\Users\ladib\source\repos\linq\bin\Debug\netcoreapp3.1\ugly_chess.pdb
+C:\Users\ladib\source\repos\linq\obj\Debug\netcoreapp3.1\ugly_chess.csproj.AssemblyReference.cache
+C:\Users\ladib\source\repos\linq\obj\Debug\netcoreapp3.1\ugly_chess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ladib\source\repos\linq\obj\Debug\netcoreapp3.1\ugly_chess.AssemblyInfoInputs.cache
+C:\Users\ladib\source\repos\linq\obj\Debug\netcoreapp3.1\ugly_chess.AssemblyInfo.cs
+C:\Users\ladib\source\repos\linq\obj\Debug\netcoreapp3.1\ugly_chess.csproj.CoreCompileInputs.cache
+C:\Users\ladib\source\repos\linq\obj\Debug\netcoreapp3.1\ugly_chess.dll
+C:\Users\ladib\source\repos\linq\obj\Debug\netcoreapp3.1\ugly_chess.pdb
+C:\Users\ladib\source\repos\linq\obj\Debug\netcoreapp3.1\ugly_chess.genruntimeconfig.cache
