@@ -6,7 +6,7 @@ namespace ugly_chess
 {
   internal abstract class Piece
   {
-    protected string position   { get; set; }
+    public string position   { get; set; }
     protected string name       { get; }
     protected bool   isWhite    { get; }
     protected bool   isCaptured { get; set; }

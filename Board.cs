@@ -17,12 +17,36 @@ namespace ugly_chess
     private const ConsoleColor darkColor = ConsoleColor.Black;
     public Board()
     {
-
+      initializeBoard();
     }
     
     private void initializeBoard()
     {
-      King whiteKing = new King("a1", "white king", true, false);
+      pieces[0, 0] = new King("a1", "white king", true, false);
+      getMove();
+    }
+
+    private void getMove()
+    {
+      string move = Console.ReadLine();
+      bool possibleMove = false;
+      for(int i = 0; i < 8; i++)
+      {
+        for (int j = 0; j < 8; j++)
+        {
+          if (pieces[i, j] != null)
+          {
+            if (String.Concat(move[0], move[1]).Equals(pieces[i, j].position)
+              && pieces[i, j].moveIsValid(String.Concat(move[2], move[4])))
+            {
+              pieces[i, j].position = move;
+              possibleMove = true;
+              break;
+            }
+          }
+        }
+      }
+      Console.WriteLine(possibleMove ? "good move" : "incorrect move");
     }
 
     private void drawBoard()
