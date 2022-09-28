@@ -19,6 +19,8 @@ namespace ugly_chess
       this.name = name;
       this.isWhite = isWhite;
       this.isCaptured = isCaptured;
+
+      Console.WriteLine($"{name} placed to {position}");
     }
 
     public abstract bool canMove(string position, string newPosition);

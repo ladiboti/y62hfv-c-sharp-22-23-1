@@ -16,8 +16,6 @@ namespace ugly_chess.Pieces
     {
       isChecked = false;
       isMated   = false;
-
-      Console.WriteLine((isWhite ? "white" : "black") + " king placed");
     }
     public override bool canMove(
       string position, string newPosition)

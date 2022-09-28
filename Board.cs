@@ -20,9 +20,20 @@ namespace ugly_chess
     
     private void initializeBoard()
     {
+      // debug
       pieces[0, 0] = new King("a1", "white king", true, false);
       Console.WriteLine(pieces[0, 0].canMove("a1", "a2") ?
         "correct" : "not correct");
+
+      pieces[0, 1] = new Rook("b1", "black rook", true, false);
+      Console.WriteLine(pieces[0, 1].canMove("b1", "b3") ?
+        "correct" : "not correct"); 
+
+      pieces[0, 2] = new Bishop("c1", "black bishop", true, false);
+      Console.WriteLine(pieces[0, 2].canMove("a1", "h8") ?
+        "correct" : "not correct"); 
+
+      // TODO: knight, queen, pawn
     }
 
     private void getMove()
