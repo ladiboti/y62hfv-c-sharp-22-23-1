@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
 using ugly_chess.Pieces;
 
 namespace ugly_chess
@@ -23,30 +21,13 @@ namespace ugly_chess
     private void initializeBoard()
     {
       pieces[0, 0] = new King("a1", "white king", true, false);
-      getMove();
+      Console.WriteLine(pieces[0, 0].canMove("a1", "a2") ?
+        "correct" : "not correct");
     }
 
     private void getMove()
     {
-      string move = Console.ReadLine();
-      bool possibleMove = false;
-      for(int i = 0; i < 8; i++)
-      {
-        for (int j = 0; j < 8; j++)
-        {
-          if (pieces[i, j] != null)
-          {
-            if (String.Concat(move[0], move[1]).Equals(pieces[i, j].position)
-              && pieces[i, j].moveIsValid(String.Concat(move[2], move[4])))
-            {
-              pieces[i, j].position = move;
-              possibleMove = true;
-              break;
-            }
-          }
-        }
-      }
-      Console.WriteLine(possibleMove ? "good move" : "incorrect move");
+      throw new NotImplementedException();
     }
 
     private void drawBoard()

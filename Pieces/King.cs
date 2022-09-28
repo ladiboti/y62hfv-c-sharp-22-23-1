@@ -19,29 +19,26 @@ namespace ugly_chess.Pieces
 
       Console.WriteLine((isWhite ? "white" : "black") + " king placed");
     }
-    public override bool moveIsValid(string newPosition)
+    public override bool canMove(
+      string position, string newPosition)
     {
-      if(newPosition.Length == 2)
+      if (moveIsValid(newPosition))
       {
-        newPosition = newPosition
-                      .Remove(0, 1)
-                      .Insert(
-                        0, (char.ToUpper(newPosition[0]) - 64).ToString()
-                       );
-        if (Enumerable.Range(1, 8).Contains((int)newPosition[0])
-            && Enumerable.Range(1, 8).Contains((int)newPosition[1])){
-          
-          //king specific TODO: remove this noob stuff
-          if (Math.Abs((int)this.position[0] - (int)newPosition[0]) == 1 
-            || Math.Abs((int)this.position[1] - (int)newPosition[1]) == 1)
-          {
-            return true;
-          }
+        int pos1 = moveToNum(position)[0] - '0';  // redundant
+        int pos2 = moveToNum(position)[1] - '0';
 
+        int newPos1 = moveToNum(newPosition)[0] - '0';
+        int newPos2 = moveToNum(newPosition)[1] - '0';
+
+        if (position != newPosition
+            && (Math.Abs(pos1 - newPos1) <= 1 
+            && Math.Abs(pos2 - newPos2) <= 1))
+        {
+          return true;
         }
       }
       return false;
-      //throw new NotImplementedException();
     }
+
   }
 }
