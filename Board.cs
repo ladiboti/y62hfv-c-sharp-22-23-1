@@ -25,14 +25,23 @@ namespace ugly_chess
       Console.WriteLine(pieces[0, 0].canMove("a1", "a2") ?
         "correct" : "not correct");
 
-      pieces[0, 1] = new Rook("b1", "black rook", true, false);
+      pieces[0, 1] = new Rook("a1", "black rook", true, false);
       Console.WriteLine(pieces[0, 1].canMove("b1", "b3") ?
         "correct" : "not correct"); 
 
-      pieces[0, 2] = new Bishop("c1", "black bishop", true, false);
+      pieces[0, 2] = new Bishop("a1", "black bishop", false, false);
       Console.WriteLine(pieces[0, 2].canMove("a1", "h8") ?
-        "correct" : "not correct"); 
+        "correct" : "not correct");
 
+      pieces[0, 3] = new Queen("a1", "white queen", true, false);
+      Console.WriteLine(pieces[0, 2].canMove("a1", "h8") ?
+        "correct" : "not correct");
+
+      pieces[0, 4] = new Rook("a1", "black rook", true, false);
+      Console.WriteLine(pieces[0, 1].canMove("b1", "b3") ?
+        "correct" : "not correct");
+
+      // set isCaptured to false by default!!!!!!!!!!!!
       // TODO: knight, queen, pawn
     }
 
