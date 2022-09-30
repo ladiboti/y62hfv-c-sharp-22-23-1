@@ -13,12 +13,12 @@ namespace ugly_chess
     protected bool isCaptured { get; set; }
 
     public Piece(string position, string name,
-      bool isWhite, bool isCaptured)
+      bool isWhite)
     {
       this.position = position;
       this.name = name;
       this.isWhite = isWhite;
-      this.isCaptured = isCaptured;
+      //this.isCaptured = false;
 
       Console.WriteLine($"{name} placed to {position}");
     }
@@ -49,6 +49,34 @@ namespace ugly_chess
         }
       }
       return false;
+    }
+
+    public void showAllMoves()
+    {
+      int pos1 = moveToNum(this.position)[0] - '0' - 1;  // still redundant
+      int pos2 = moveToNum(this.position)[1] - '0' - 1;
+
+      Console.WriteLine(pos1);
+
+      for (int i = 0; i < 8; i++)
+      {
+        for (int j = 0; j < 8; j++)
+        {
+          if (this.canMove(this.position, "b" + (j + 1).ToString())) // :(((((
+          {
+            Console.Write("o");
+          }
+
+          //Console.WriteLine("a" + (j + 1).ToString());
+          else
+            Console.Write(
+              (pos1 == i && pos2 == j) ? "x " : "- "
+            );
+
+
+        }
+        Console.WriteLine();
+      }
     }
     public void capturePiece(Piece captured)
     {

@@ -6,9 +6,8 @@ namespace ugly_chess.Pieces
 {
   internal class Queen : Piece
   {
-    public Queen(string position, string name,
-   bool isWhite, bool isCaptured)
-     : base(position, name, isWhite, isCaptured)
+    public Queen(string position, string name,  bool isWhite)  
+      : base(position, name, isWhite)
     {
       // empty???
     }

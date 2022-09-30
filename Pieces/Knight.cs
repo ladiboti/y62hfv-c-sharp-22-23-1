@@ -4,9 +4,9 @@ using System.Text;
 
 namespace ugly_chess.Pieces
 {
-  internal class Rook : Piece
+  internal class Knight : Piece
   {
-    public Rook(string position, string name, bool isWhite)
+    public Knight(string position, string name, bool isWhite)
       : base(position, name, isWhite)
     {
       // empty???
@@ -22,15 +22,12 @@ namespace ugly_chess.Pieces
         int newPos1 = moveToNum(newPosition)[0] - '0';
         int newPos2 = moveToNum(newPosition)[1] - '0';
 
-        if(position != newPosition    // TODO: simplyfy
-          && (pos1 == newPos1
-          && pos2 != newPos2)
-          || (pos1 != newPos1
-          && pos2 == newPos2))
+        if (position != newPosition    // TODO: simplyfy
+          && ( (Math.Abs(pos1 - newPos1) == 2 || Math.Abs(pos1 - newPos1) == 1) 
+          && (  Math.Abs(pos2 - newPos2) == 2 || Math.Abs(pos2 - newPos2) == 1)))
         {
           return true;
         }
-
       }
       return false;
     }

@@ -10,9 +10,8 @@ namespace ugly_chess.Pieces
     public static bool isChecked { get; set; }
     public static bool isMated   { get; set; }
 
-    public King(string position, string name,
-      bool isWhite, bool isCaptured) 
-      : base(position, name, isWhite, isCaptured)
+    public King(string position, string name, bool isWhite) 
+      : base(position, name, isWhite)
     {
       isChecked = false;
       isMated   = false;
