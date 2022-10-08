@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ladib\\source\\repos\\linq\\hello_world.csproj",
-      "projectName": "hello_world",
-      "projectPath": "C:\\Users\\ladib\\source\\repos\\linq\\hello_world.csproj",
+      "projectUniqueName": "C:\\Users\\ladib\\source\\repos\\linq\\lesson4.csproj",
+      "projectName": "lesson4",
+      "projectPath": "C:\\Users\\ladib\\source\\repos\\linq\\lesson4.csproj",
       "packagesPath": "C:\\Users\\ladib\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ladib\\source\\repos\\linq\\obj\\",
       "projectStyle": "PackageReference",

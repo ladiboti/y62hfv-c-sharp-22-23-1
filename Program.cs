@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace hello_world {
+namespace lesson4 {
   internal class Program {
     static void Main(string[] args) {
       int[] n1 = {
